@@ -7,27 +7,21 @@ package net.java.course1.shape;
 
 /**
  *
- * @author nazman
+ * @author yevhen.nazarenko
  */
 public class Shape {
-    protected double square;
     
-    public Shape(){
-        square = 0d;
+    public static void main(String[] args) {
+        Square sq = new Square(14);
+        Rectangle r = new Rectangle(14,15);
+       sq.setWidth(11);
+        System.out.println(r.toString());
+        System.out.println(sq.toString());
+        
+       
     }
     
-    protected double calcSquare(){
-        return square;
+    public static void menu(){
+        
     }
-
-    public double getSquare() {
-        return square;
-    }
-    
-    
-    public String toString(){
-    
-        return "";
-    }
-
 }

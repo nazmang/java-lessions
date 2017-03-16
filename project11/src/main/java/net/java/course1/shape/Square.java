@@ -9,33 +9,25 @@ package net.java.course1.shape;
  *
  * @author nazman
  */
-public class Square extends Shape{
+public class Square extends Rectangle{
     
-    protected double length = 0;
+    Square(double w){
+        width = w;
+        height = w;
+    }       
 
-    public double getLength() {
-        return length;
+    public void setWidth(double width) {
+        this.width = width;
+        this.height = width;
     }
 
-    public void setLength(double length) {
-        this.length = length;
-    }
-
-
-    public Square() {
-        setLength(length);
-        square = 0;
+    public void setHeight(double height) {
+        this.height = height;
+        this.width = height;
     }
     
-    protected double calcSquare(){
-        square = length * length;
-        return square;
-    }
-    
-    public String toString() {
-        return "Square{" + '}';
-    }
-    
-    
-    
+    public String toString(){
+        StringBuilder str = new StringBuilder("Это квадрат со стороной: " + width);
+        return  str.toString(); 
+    }    
 }

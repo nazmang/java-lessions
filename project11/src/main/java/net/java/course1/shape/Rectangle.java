@@ -51,6 +51,8 @@ public class Rectangle  {
     
     public String toString(){
         StringBuilder str = new StringBuilder("Это прямоугольник со сторонами: длина " + width + " ширина " + height);
+        str.append("\nИмеет плошадь: ").append(this.getSquare());
+        str.append("\nИмеет периметр: ").append(this.getPerimeter());
         return  str.toString(); 
     }
 }

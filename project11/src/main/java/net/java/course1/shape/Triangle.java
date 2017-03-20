@@ -65,6 +65,8 @@ public class Triangle {
     
     public String toString(){
         StringBuilder str = new StringBuilder("Это треугольник со сторонами: " + getA() + " " + getB() + " " + getC());
+        str.append("\nИмеет плошадь: ").append(this.getSquare());
+        str.append("\nИмеет периметр: ").append(this.getPerimeter());
         return  str.toString(); 
     }
 }

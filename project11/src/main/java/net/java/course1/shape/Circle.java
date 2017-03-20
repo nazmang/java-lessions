@@ -49,6 +49,8 @@ public class Circle {
     
     public String toString(){
         StringBuilder str = new StringBuilder("Это круг с радиусом: " + getRadius());
+        str.append("\nИмеет плошадь: ").append(this.getSquare());
+        str.append("\nИмеет периметр: ").append(this.getPerimeter());
         return  str.toString(); 
     }
 }
